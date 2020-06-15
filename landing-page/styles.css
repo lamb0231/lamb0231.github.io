@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7ff;
+    
+}
+
+.main {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header,
+section,
+footer {
+    margin: 36px;
+}
+/* \ header logo properties */
+
+.header {
+    padding: 0;
+}
+
+.header img {
+    height: 81.05px;
+    width: 114.73px;
+}
+
+/* info section properties */
+
+/* .info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.info-text {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.info-image {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.apply {
+    grid-column-start: 1;
+    grid-column-end: 5;
+} */
+
+/* info section text styles */
+.info-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.info-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* info image settings */
+
+.info-image {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* forms basic settings */
+
+.apply fieldset,
+.calculate fieldset {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border: none;
+}
+
+/* main table styles */
+
+.apply {
+    box-shadow: 0 0 10px grey;
+    border-radius: 20px;
+}
+
+.apply h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.link {
+    font-size: 14px;
+}
+
+ .apply a {
+     color: #ff8480;
+     text-decoration: none;
+     font-size: 14px;
+ }
+
+ .apply p {
+     margin: 10px 0;
+ }
+
+ #first-name,
+ #last-name,
+ #phone,
+ #email {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+
+     width: 100%;
+     padding: 10px 10px;
+     margin: 10px 0;
+     box-sizing: border-box;
+     background-color: #F4F4F5;
+     border: solid #F4F4F5;
+     border-radius: 11px;
+     
+     
+ }
+
+ input[type="submit"] {
+     font-size: 24px;
+     font-weight: bold;
+     background-color: #57eeab;
+     border: none;
+     border-radius: 11px;
+     width: 100%;
+     height: 50px;
+     margin: 10px 0;
+ }
+
+/* footer table styles */
+
+#hours,
+ #city {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #F4F4F5;
+    border: solid #F4F4F5;
+    border-radius: 11px;
+ }
+
+/* .calculate {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(4, 1fr) ;
+}
+
+.calculate h3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.calculate p {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.calculate #hours {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.calculate #city {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+} */
+
+input[type="button"] {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F7F7FF;
+    background-color: #ff8480;
+    border: none;
+    border-radius: 11px;
+    width: 100%;
+    height: 40px;
+}
+
+/* footer grid */
+
+.footer {
+    display: grid;
+}
+
+.calculate {
+    margin: 10px 0;
+    display: grid;
+}
+
+ /* footer styles */
+
+ .calculate h3,
+ p {
+     margin: 0;
+ }
+
+ .footer {
+     background-color: #fffd8c;
+     width: 100%;
+     margin: 0 auto;
+     padding: 0;
+ }
+
+ /* socials icon properties */
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+  }
