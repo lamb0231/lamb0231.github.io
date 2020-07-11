@@ -46,6 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /*********************************************
                 Default Styles
@@ -62,7 +63,9 @@ table {
  }
 
  body {
-     font-family: Arial, Helvetica, sans-serif;
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.6;
+     background: #FFFAFA;
  }
 
  img {
@@ -72,15 +75,31 @@ table {
 /* site properties */
 
 .header {
-    background-color: pink;
+    background-color: #ead7d4;
 }
 
 nav ul {
     display: flex;
+    align-items: center;
+
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+    background: #ead7d4;
 }
 
 nav ul li {
     flex: 1;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: pink;
 }
 
 /* nav ul li:first-child{
@@ -89,14 +108,37 @@ nav ul li {
 
 
 nav,
- main {
+ main,
+ footer {
      max-width: 1024px;
      margin: 0 auto;
  }
 
  .footer {
+     display: flex;
+     justify-content: space-evenly;
+
     padding: 20px;
-    background-color: purple;
+    background-color: #FFFAFA;
+    text-transform: uppercase;
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover{
+    color: pink;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials img {
+    max-width: 50px;
+    height: 50px;
 }
 
 /* homepage properties */
@@ -107,6 +149,10 @@ nav,
      margin: 10px 0;
  }
 
+ .hours {
+    background-color: #70698C;
+ }
+
 .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -114,10 +160,14 @@ nav,
     margin: 10px 0;
 }
 
+.products img {
+    border-radius: 50%;
+}
+
  .productpreview {
      min-width: 100px;
      height: 200px;
-     background-color: pink;
+     background-color: #EAD7D4;
  }
 
  /* about page properties */
@@ -125,12 +175,12 @@ nav,
 
  /* products page properties */
 
- .product-selection {
+ /* .product-selection {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     margin: 10px 0;
- }
+ } */
 
  .productinfo {
      min-width: 100px;
