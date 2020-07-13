@@ -56,6 +56,12 @@ table {
      box-sizing: border-box;
  }
 
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+ }
+
  *,
  *:after ,
  *:before {
@@ -88,8 +94,15 @@ nav ul {
     background: #ead7d4;
 }
 
+/* .logo {
+    padding: 5px 5px;
+    margin-right: auto;
+    flex: 1;
+} */
+
 nav ul li {
     flex: 1;
+    padding: 5px 5px;
 }
 
 nav li a {
@@ -108,8 +121,8 @@ nav ul li a:hover {
 
 
 nav,
- main,
- footer {
+ main {
+     width: 100%;
      max-width: 1024px;
      margin: 0 auto;
  }
@@ -119,7 +132,7 @@ nav,
      justify-content: space-evenly;
 
     padding: 20px;
-    background-color: #FFFAFA;
+    background-color: #ead7d4;
     text-transform: uppercase;
 }
 
@@ -130,6 +143,12 @@ nav,
 
 .footer a:hover{
     color: pink;
+}
+
+.to-top a {
+    border: solid;
+    padding: 0.5rem;
+    color: black;
 }
 
 .socials {
@@ -145,12 +164,42 @@ nav,
 
  .welcome {
      display: grid;
-     grid-template-columns: 1fr 2fr 1fr;
+     grid-template-columns: 3fr 1fr;
+     grid-gap: 10px;
      margin: 10px 0;
+ }
+
+ .new img {
+     width: 100%;
+     border: solid;
  }
 
  .hours {
     background-color: #70698C;
+    height: 99%;
+    border-radius: 20px;
+ }
+
+ .hours img {
+     height: 200px;
+     border-radius: 50%;
+ }
+
+ .hours td {
+    font-size: 18px;
+}
+
+ caption {
+     font-weight: bold;
+     font-size: 20px;
+ }
+
+table {
+     padding: 3rem;
+     width: 100%;
+     height: 60%;
+     margin: auto;
+     text-align: center;
  }
 
 .products {
@@ -160,27 +209,43 @@ nav,
     margin: 10px 0;
 }
 
-.products img {
-    border-radius: 50%;
+.productpreview h2 {
+    font-size: 20px;
+    text-align: center;
+    border: solid;
 }
 
- .productpreview {
-     min-width: 100px;
-     height: 200px;
-     background-color: #EAD7D4;
+ /* about page properties */
+
+ .about-page {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     grid-gap: 10px;
+     margin: 10px 0;
  }
 
- /* about page properties */
+ .about-page h1 {
+     font-size: 20px;
+     text-align: center;
+ }
+
+.about {
+    border: solid;
+}
+
+ .contact {
+     background-color: #70698C;
+ }
 
 
  /* products page properties */
 
- /* .product-selection {
+ .product-selection {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     margin: 10px 0;
- } */
+ }
 
  .productinfo {
      min-width: 100px;
