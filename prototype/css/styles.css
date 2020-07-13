@@ -47,41 +47,249 @@ table {
 	border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /*********************************************
                 Default Styles
  *********************************************/
 
- @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ html {
+    box-sizing: border-box;
+}
 
- * {
-     box-sizing: border-box;
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+*,
+*:after ,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #FFFAFA;
+}
+
+nav,
+main {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header,
+section,
+footer {
+    flex-grow: 1;
+    padding: 25px;
+    margin: 5px;
+}
+
+header,
+footer {
+    background: #ead7d4;;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul li {
+    flex: 1;
+    padding: 5px 5px;
+    
+}
+
+@media (max-width: 600px){
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li:first-child {
+        margin-left: 30%;
+    }
+}
+
+nav ul li:first-child{
+    margin-right: 25%;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: pink;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+
+   padding: 20px;
+   background-color: #ead7d4;
+   text-transform: uppercase;
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover{
+    color: pink;
+}
+
+.to-top a {
+    border: solid;
+    padding: 0.5rem;
+    color: black;
+}
+
+.to-top,
+.copyright,
+.socials {
+    display: flex;
+}
+
+.socials img {
+    max-width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .to-top ,
+    .copyright,
+    .socials {
+        padding: 10px;
+        justify-content: center;
+    }
+}
+
+/* hompage properties */
+
+@media (min-width: 800px) {
+    .welcome {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 10px;
+        /* margin: 10px 0; */
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        margin: 10px 0;
+    }
+
+}
+
+.new img {
+    /* width: 100%; */
+    border: solid;
+}
+
+.hours img {
+    /* max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%; */
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #70698C;
+    /* border-radius: 20px; */
+    /* width: 100%; */
+    /* height: 99%; */
  }
 
- html,
- body {
-     display: flex;
-     width: 100%;
-     height: 100%;
- }
-
- main {
-     width: 100%;
-     max-width: 1200px;
+ .table {
+     text-align: center;
+     /* font-size: 18px; */
+     font-size: 0.90rem;
+     font-weight: bold;
      margin: 0 auto;
+     /* border: solid; */
  }
 
- header,
- section,
- footer {
-     flex-grow: 1;
-     padding: 25px;
-     margin: 5px;
-     background-color: pink;
- }
+ .productpreview h2 {
+    font-size: 20px;
+    text-align: center;
+    border: solid;
+}
 
- /* header styles */
+/* about page styles */
 
- .header {
-     display: flex;
-     flex-direction: column;
- }
+@media (min-width: 800px) {
+    .about-page {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
+        margin: 10px 0;
+    }
+}
+
+.about-page h1 {
+    font-size: 20px;
+    text-align: center;
+    background-color: #FFFAFA;
+    /* border: solid; */
+}
+
+.about,
+.contact {
+    border: solid;
+}
+
+.contact {
+    background-color: #70698C;
+}
+
+.contact-form {
+
+}
+
+/* product page styles */
+
+@media (min-width: 800px) {
+    .product-selection {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       grid-gap: 10px;
+       margin: 10px 0;
+    }
+}
+
+.productinfo {
+    display: flex;
+    flex-direction: column;
+    /* min-width: 100px;
+    height: 200px; */
+    background-color: pink;
+}
