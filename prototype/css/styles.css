@@ -293,3 +293,10 @@ nav ul li a:hover {
     height: 200px; */
     background-color: pink;
 }
+
+.productinfo h2 {
+    font-size: 20px;
+    background-color: #FFFAFA;
+    text-align: center;
+    border: solid pink;
+}
