@@ -11,14 +11,14 @@
     <title>We Love Bootstrap!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">Bootstrap 101</a>
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand font-weight-bold" href="#">Bootstrap 101</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -38,14 +38,14 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>
     <div class="container-md mt-3 pt-3">
-    <div class="container m-3">
+    <div class="container m-3 bg-light">
         <section class="row">
-            <h1 class="col">We Love Bootstrap!</h1>
+            <h1 class="col text-uppercase font-weight-bold">We Love Bootstrap!</h1>
         </section>
         <section class="row">
             <img class="col-lg img-fluid" src="http://placeimg.com/1000/500/tech" alt="tech-img">
@@ -53,68 +53,67 @@
         </section>
     </div>
     <div class="container m-3">
-        <section class="row">
-            <h2 class="col-md-12 text-center">Components!</h2>
-            <p class="col-md">Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.</p>
+        <section class="row bg-info">
+            <h2 class="col-md-12 text-center text-uppercase font-weight-bold text-white">Components!</h2>
+            <p class="col-md font-weight-bold text-white text-justify">Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.</p>
             <img class="col-md img-fluid" src="http://placeimg.com/800/500/tech" alt="tech-img">
         </section>
         <div class="row m-3">
             <div class="col-md-4">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Cards!</h5>
+                  <p class="card-text">Cards are easy to use and fully customizeable!</p>
+                  <a href="#" class="btn btn-success">More Info</a>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title"> Cards!</h5>
+                  <p class="card-text">Cards are easy to use and fully customizeable!</p>
+                  <a href="#" class="btn btn-info">More Info</a>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Cards!</h5>
+                    <p class="card-text">Cards are easy to use and fully customizeable!</p>
+                    <a href="#" class="btn btn-secondary">More Info</a>
                   </div>
                 </div>
               </div>
           </div>
     <div class="container m-3">
         <section class="row">
-            <h3 class="col-md-12 text-center">Alerts!</h3>
-            <p class="col-md-12">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+            <h3 class="col-md-12 text-uppercase font-weight-bold text-center">Alerts!</h3>
+            <p class="col-md-12 text-center">Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
             </section>
             <section class="row">
-            <div class="col-md-4 alert" role="alert">
+            <div class="col-md-4 alert alert-danger " role="alert">
                 A Typical Bootstrap Alert!
             </div>
-            <div class="col-md-4 alert" role="alert">
+            <div class="col-md-4 alert alert-success" role="alert">
                 A Typical Bootstrap Alert!
             </div>
-            <div class="col-md-4 alert" role="alert">
+            <div class="col-md-4 alert alert-warning" role="alert">
                 A Typical Bootstrap Alert!
             </div>
         </section>
     </div>
-    <div class="container m-3">
+    <div class="container m-3 bg-primary">
         <section class="row">
-            <h2 class="col-md-12 text-center">Mobile First!</h2>
+            <h2 class="col-md-12 text-uppercase font-weight-bold text-white text-center">Mobile First!</h2>
             <img class="col-md-6 img-fluid" src="http://placeimg.com/800/400/tech" alt="">
-            <p class="col-md-6 mt-3">Bootstrap includes a powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
+            <p class="col-md-6 mt-3 text-white font-weight-bold">Bootstrap includes a powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes.</p>
         </section>
     </div>
     <div class="container text-center">
         <section class="row">
-            <h2 class="col-md-12 m-3">But wait... Theres More!</h2>
-            <img class="col-md-12 img-fluid" src="http://placeimg.com/500/400/tech" alt="tech-img">
+            <h2 class="col-md-12 m-3 text-uppercase font-weight-bold">But wait... Theres More!</h2>
             <p class="col-md-12">Theres are just some of the amazing features Bootstrap has to offer..... Dive and find out so much more!
             </p>
             <button type="button" class="btn btn-outline-warning btn-lg btn-block m-3">Find Out More!</button>
