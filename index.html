@@ -11,7 +11,7 @@
     <title>JRDN</title>
   </head>
   <body>
-    <div id="header">
+    <div class="container" id="header">
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <a class="navbar-brand" href="index.html"><img src="img/JRDN-logo-chrome.png" width="90" height="90" alt="jrdn logo" loading="lazy"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,35 +27,58 @@
             </div>
           </nav>
     </div>
-    <div id="welcome">
-       <section>
-        <h1>Welcome!</h1>
-        <p>Excepteur sint occaecat cupidatat</p>
-        <img src="img/home-1.jpg" class="img-fluid" alt="profile img">
-        <h2>LOREM IPSUM DOLOR AMET </h2>
-        <a href="portfolio.html">LEARN MORE</a>
-       </section>
+    <div class="container-sm mt-5" id="welcome">
+        <div class="row">
+            <section class="col-sm">
+                <h1>Welcome!</h1>
+                <p>Excepteur sint occaecat cupidatat</p>
+               </section>
+               <section class="col-sm-8">
+                <img src="img/home-1.jpg" class="img-fluid" alt="profile img">
+               </section>
+               <section class="col-sm">
+                <h2>LOREM IPSUM DOLOR AMET </h2>
+                <a href="portfolio.html">LEARN MORE</a>
+               </section>
+        </div>
     </div>
-    <div id="projects">
-        <section>
-            <h1>Projects</h1>
-            <img src="img/home-2.jpg" class="img-fluid" alt="photography">
-            <a href="jrdn-portfolio/photography.html">Photography</a>
-            <img src="img/home-3.jpg" class="img-fluid" alt="graphic design">
-            <a href="jrdn-portfolio/graphic.html">Graphic Design</a>
-            <img src="img/home-4.jpg" class="img-fluid" alt="ux design">
-            <a href="jrdn-portfolio/ux.html">Ux Design</a>
+    <div class="container-sm text-center" id="projects">
+        <h1>Projects</h1>
+        <section class="row">
+            <div class="col-sm">
+                <img src="img/home-2.jpg" class="img-fluid" alt="photography">
+                <a href="photography.html">Photography</a>
+            </div>
+            <div class="col-sm">
+                <img src="img/home-3.jpg" class="img-fluid" alt="graphic design">
+                <a href="graphic.html">Graphic Design</a>
+            </div>
+            <div class="col-sm">
+                <img src="img/home-4.jpg" class="img-fluid" alt="ux design">
+                <a href="ux.html">Ux Design</a>
+            </div>
         </section>
     </div>
-    <div id="footer">
-        <div id="socials">
-            <img src="img/icons/instagram.png" width="30" height="30" alt="instagram" loading="lazy">
-            <img src="img/icons/twitter.png" width="30" height="30" alt="twitter" loading="lazy">
-            <img src="img/icons/facebook.png" width="30" height="30" alt="facebook" loading="lazy">
-            <img src="img/icons/linkedin.png" width="30" height="30" alt="linkedin" loading="lazy">
+    <div class="container" id="footer">
+        <div class="row m-4" id="socials">
+            <section class="col col-sm-4">
+                <a href="#"> <img src="img/icons/instagram.png" width="30" height="30" alt="instagram" loading="lazy"></a>
+            </section>
+            <section class="col col-sm-4">
+                <a href="#"><img src="img/icons/twitter.png" width="30" height="30" alt="twitter" loading="lazy"></a>
+            </section>
+            <section class="col col-sm-4">
+                <a href="#"><img src="img/icons/facebook.png" width="30" height="30" alt="facebook" loading="lazy"></a>
+            </section>
+            <section class="col col-sm-4">
+                <a href="#"><img src="img/icons/linkedin.png" width="30" height="30" alt="linkedin" loading="lazy"></a> 
+            </section>   
         </div>
-        <img src="img/JRDN-logo-chrome-transparent.png" width="75" height="75" alt="jrdn logo" loading="lazy">
-        <p>COPYRIGHT &copy; JRDN 2020</p>
+        <div class="text-center">
+            <a href="index.html"><img src="img/JRDN-logo-chrome-transparent.png" width="75" height="75" alt="jrdn logo" loading="lazy"></a>
+            <p class="mt-2">COPYRIGHT &copy; JRDN 2020</p>
+        </div>
+        
     </div>
 
     <!-- Optional JavaScript -->
