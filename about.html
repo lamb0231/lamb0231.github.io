@@ -7,6 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
 
     <title>JRDN</title>
   </head>
@@ -28,12 +32,14 @@
           </nav>
     </div>
     <div class="container-sm" id="bio">
+      <section class="text-center">
+        <h1>Bio</h1>
+      </section>
       <div class="row">
         <section class="col-sm">
           <img src="img/bio-1.jpg" class="img-fluid" alt="profile image">
         </section>
-        <section class="col-sm">
-          <h1>Bio</h1>  
+        <section class="col-sm">  
           <p>Culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ropeior architecto beatae vitae dicta sunt explicabo. Nemo eniem ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eosep quiklop ratione voluptatem sequi nesciunt. Neque porro quisquam</p>
         </section>
         <section class="col-sm-12 text-center">
@@ -41,16 +47,25 @@
         </section>
       </div>
     </div>
-    <div id="footer">
-        <div id="socials">
-            <img src="img/icons/instagram.png" width="30" height="30" alt="instagram" loading="lazy">
-            <img src="img/icons/twitter.png" width="30" height="30" alt="twitter" loading="lazy">
-            <img src="img/icons/facebook.png" width="30" height="30" alt="facebook" loading="lazy">
-            <img src="img/icons/linkedin.png" width="30" height="30" alt="linkedin" loading="lazy">
-        </div>
-        <img src="img/JRDN-logo-chrome-transparent.png" width="75" height="75" alt="jrdn logo" loading="lazy">
-        <p>COPYRIGHT &copy; JRDN 2020</p>
-    </div>
+    <div class="container my-footer" id="footer">
+      <div class="row m-4" id="socials">
+          <section class="col col-sm-4">
+              <a href="#"> <img src="img/icons/instagram.png" width="30" height="30" alt="instagram" loading="lazy"></a>
+          </section>
+          <section class="col col-sm-4">
+              <a href="#"><img src="img/icons/twitter.png" width="30" height="30" alt="twitter" loading="lazy"></a>
+          </section>
+          <section class="col col-sm-4">
+              <a href="#"><img src="img/icons/facebook.png" width="30" height="30" alt="facebook" loading="lazy"></a>
+          </section>
+          <section class="col col-sm-4">
+              <a href="#"><img src="img/icons/linkedin.png" width="30" height="30" alt="linkedin" loading="lazy"></a> 
+          </section>   
+      </div>
+      <div class="text-center">
+          <a href="index.html"><img src="img/JRDN-logo-chrome-transparent.png" width="75" height="75" alt="jrdn logo" loading="lazy"></a>
+          <p class="mt-2">COPYRIGHT &copy; JRDN 2020</p>
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

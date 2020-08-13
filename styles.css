@@ -1,0 +1,68 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+    color: #39FF14;
+}
+
+a {
+    color: #000000;
+}
+
+.my-header,
+.my-footer {
+    background-color: #FDFCFC;
+}
+
+.welcome {
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10;
+}
+
+.welcome-text {
+    grid-column: 1/5;
+    grid-row: 2/4;
+
+}
+
+.welcome-img {
+    grid-column: 3/10;
+    grid-row: 1/10;
+    z-index: -1;
+
+}
+
+.welcome-link {
+    grid-column: 8/12;
+    grid-row: 6/8;
+
+}
+
+@media only screen and (max-width: 576px) {
+    .welcome {
+        grid-template-rows: auto;
+    }
+
+    .welcome-text {
+        grid-column: 1/13;
+        grid-row: 1;
+
+    }
+
+    .welcome-img {
+        grid-column: 1/13;
+        grid-row: 2;
+
+    }
+
+    .welcome-link {
+        grid-column: 1/13;
+        grid-row: 3;
+
+    }
+}
