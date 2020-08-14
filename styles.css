@@ -15,7 +15,10 @@ h1,
 h2,
 .projects a,
 .bio-link,
-.port a {
+.port a,
+.graphic-link,
+.ux-link,
+.photo-link {
     color: #39FF14;
 }
 
@@ -92,7 +95,10 @@ a:hover {
     font-size: 20px;
 }
 
-.bio-link {
+.bio-link,
+.graphic-link,
+.ux-link,
+.photo-link {
     font-size: 2rem;
 }
 
